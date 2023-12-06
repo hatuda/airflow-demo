@@ -1,12 +1,14 @@
 import datetime
 
 from airflow.decorators import dag
-from airflow.operators.empty import EmptyOperator
+from airflow.operators.bash import BashOperator
 
 
-@dag(start_date=datetime.datetime(2021, 1, 1), schedule="@daily")
+@dag(start_date=datetime.datetime(2023, 12, 5), schedule="*/1 * * * *")
 def generate_dag():
-    EmptyOperator(task_id="task")
+    # ランダムに失敗するコマンドを実行
+    BashOperator(task_id="task",
+                 bash_command="exit $((RANDOM % 2))")
 
 
 generate_dag()
