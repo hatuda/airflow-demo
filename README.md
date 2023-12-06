@@ -16,3 +16,16 @@ docker compose up
 ```
 
 3. [ログイン画面](http://localhost:8080/)にアクセス
+
+## ``DAG``作成のための初期設定
+
+[pipenv](https://pipenv.pypa.io/en/latest/)による設定管理を行っているため、以下のコマンドを最初に<br>
+実行する必要がある。
+
+```shell
+ pipenv install
+```
+
+- **上記コマンドの実行についてはpipenvのインストールが事前に必要になります。**
+- **[pyenv](https://github.com/pyenv-win/pyenv-win)をインストールすることにより指定されたバージョンのPythonもインストールされるため、**<br>
+**こちらもインストールした方がいいです。**
