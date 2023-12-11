@@ -1,6 +1,7 @@
 # `Airflow`検証
 
-[Airflow を Docker で動かす](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html)形式のものになります。<br>
+[Airflow を Docker で動かす](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html)
+形式のものになります。<br>
 以下の手順で起動できます。
 
 1. 初期化
@@ -16,6 +17,7 @@ docker compose up
 ```
 
 3. [ログイン画面](http://localhost:8080/)にアクセス
+    - **ログインID,パスワードは`airflow`です。**
 
 ## ``DAG``作成のための初期設定
 
@@ -27,5 +29,6 @@ docker compose up
 ```
 
 - **上記コマンドの実行についてはpipenvのインストールが事前に必要になります。**
-- **[pyenv](https://github.com/pyenv-win/pyenv-win)をインストールすることにより指定されたバージョンのPythonもインストールされるため、**<br>
-**こちらもインストールした方がいいです。**
+- **[pyenv](https://github.com/pyenv-win/pyenv-win)
+  をインストールすることにより指定されたバージョンのPythonもインストールされるため、<br>**
+  **こちらもインストールした方がいいです。**
